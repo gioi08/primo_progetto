@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from primo_progetto.views import index
+from seconda_app.views import es_if
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", index),
-    path('prima_app/', include("prima_app.urls", namespace="prima_app"))
+    path('prima_app/', include("prima_app.urls", namespace="prima_app")),
+    path('seconda_app/', include("seconda_app.urls", namespace="seconda_app")),
 ]
