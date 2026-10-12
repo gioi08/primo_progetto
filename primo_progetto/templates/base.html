@@ -30,12 +30,14 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="dropdownPrimaApp">
           <a class="dropdown-item" href="{% url 'prima_app:indice' %}">index</a>
-          <a class="dropdown-item" href="{% url 'prima_app:welcome' %}">homepage welcome</a>
-          <a class="dropdown-item" href="{% url 'prima_app:lista' %}">menu</a>
-          <a class="dropdown-item" href="{% url 'prima_app:chi_siamo'%}">chi siamo</a>
-          <a class="dropdown-item" href="{% url 'prima_app:variabili' %}">variabili</a>
           <div class="dropdown-divider"></div>
-          
+          <a class="dropdown-item" href="{% url 'prima_app:welcome' %}">homepage welcome</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{% url 'prima_app:lista' %}">menu</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{% url 'prima_app:chi_siamo'%}">chi siamo</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{% url 'prima_app:variabili' %}">variabili</a>
         </div>
       </li>
 
@@ -46,8 +48,10 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="dropdownSecondaApp">
           <a class="dropdown-item" href="{% url 'seconda_app:es_if' %}">es_if</a>
+          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="{% url 'seconda_app:if_else_elif' %}">if_else_elif</a>
           <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{% url 'seconda_app:es_for' %}">es_for</a>
         </div>
       </li>
 
