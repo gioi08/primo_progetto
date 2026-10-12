@@ -21,13 +21,13 @@
 {% if var1 == var2 %}
 <p><i>var1 is equal to var2 </i></p>
 {% endif %}
-{ if var1 != var2 %}
+{% if var1 != var2 %}
 <p><i>var1 is not equal to var2 </i></p>
 {% endif %}
 {% if var1 < var2 and var1 < var3 %}
 <p><i>var1 is less than var2 and var1 is less than var3 </i></p>
 {% endif %}
-{ if var1 < var2 or var3 < var2 %}
+{% if var1 < var2 or var3 < var2 %}
 <p><i>var1 is less than var2 or var3 is less than var2 </i></p>
 {% endif %}
 {% if not var1 > var2 %}

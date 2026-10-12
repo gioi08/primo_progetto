@@ -13,7 +13,7 @@ def lista(request):
 def chi_siamo(request):
     return render(request,"prima_app/chi_siamo.html")
 
-def indice(request):
+def index(request):
     return render(request, "prima_app/index.html")
 
 def variabili(request):
