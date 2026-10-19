@@ -55,6 +55,22 @@
         </div>
       </li>
 
+      <!-- Dropdown: prova pratica 1 B -->
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdownProvaPratica" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          prova_pratica_1_B
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownProvaPratica">
+          <a class="dropdown-item" href="{% url 'prova_pratica_1_B:index' %}">index</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{% url 'prova_pratica_1_B:massimo' %}">massimo</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{% url 'prova_pratica_1_B:pari' %}">pari</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{% url 'prova_pratica_1_B:studenti' %}">studenti</a>
+        </div>
+      </li>
+
     </ul>
     
     <form class="form-inline my-2 my-lg-0">

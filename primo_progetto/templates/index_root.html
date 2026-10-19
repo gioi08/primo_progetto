@@ -6,7 +6,15 @@
         <title>Indice</title>
     </head>
     <body>
-        <p><a href="/admin">Pannello admin</a></p>
-        <p><a href="{% url 'prima_app:indice' %}">Index prima app</a></p>
+        {% extends "base.html"%}
+
+        {%block title%} {{block.super}} Chi siamo {%endblock title%}
+
+        {%block content%}
+            <p><a href="/admin">Pannello admin</a></p>
+            <p><a href="{% url 'prima_app:indice' %}">Index prima app</a></p>
+            <p><a href="{% url 'prova_pratica_1_B:index' %}">Index prova pratica</a></p>
+        {%endblock content%}
+       
     </body>
 </html>
